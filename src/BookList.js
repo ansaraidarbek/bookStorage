@@ -30,7 +30,7 @@ const BookList = () => {
 
   return (
     <div>
-      <button onClick={handleSort}>Сортировать по {sortOrder === 'asc' ? 'убыванию' : 'возрастанию'} имени</button>
+      <button onClick={handleSort}>Sort by {sortOrder === 'asc' ? 'desc' : 'asc'} имени</button>
       <ul>
         {sortBooks().map(book => (
           <li key={book.id}>
